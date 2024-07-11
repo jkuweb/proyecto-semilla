@@ -2,6 +2,7 @@
 
 ## Configuración
 - HTML Template 
+- Sass
 - Webpack
 - React
 - TypeScript
