@@ -6,6 +6,7 @@
 - Webpack
 - React
 - TypeScript
+- Environment variable
 
 ### Webpack (v.5.92.1)
  - webpack
