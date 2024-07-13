@@ -36,5 +36,6 @@ export default merge(common, {
     new Dotenv({
       path: "./dev.env",
     }),
+
   ],
 });

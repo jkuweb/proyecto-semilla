@@ -13,7 +13,8 @@
     "esModuleInterop": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "webpack.prod.js"
   ],
   "exclude": [
     "node_modules"

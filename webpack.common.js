@@ -21,7 +21,7 @@ export default {
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        use: ['babel-loader']
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
