@@ -37,3 +37,32 @@
     "build": "tsc --noEmit && webpack --mode development"
   },
 ```
+
+## Vendor (optional)
+```
+// webpack.prod.js
+splitChunks: {
+      cacheGroups: {
+        vendor: {
+          chunks: "all",
+          name: (module) => {
+            const packageName = module.context.match(
+              /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+            )?.[1];
+            return packageName
+              ? `vendor/${packageName.replace("@", "")}`
+              : null;
+          },
+          test: /[\\/]node_modules[\\/]/,
+          enforce: true,
+        },
+      },
+    },
+
+    dist/
+      vendor/
+        react.8akfihde.js
+        react-dom.f78sdjsd8.js
+        ....
+
+```

@@ -35,14 +35,7 @@ export default merge(common, {
       cacheGroups: {
         vendor: {
           chunks: "all",
-          name: (module) => {
-            const packageName = module.context.match(
-              /[\\/]node_modules[\\/](.*?)([\\/]|$)/
-            )?.[1];
-            return packageName
-              ? `vendor/${packageName.replace("@", "")}`
-              : null;
-          },
+          name: "vendor",
           test: /[\\/]node_modules[\\/]/,
           enforce: true,
         },
