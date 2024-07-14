@@ -7,6 +7,6 @@ const root = createRoot(rootElement);
 root.render(
   <>
     {' '}
-    <h1 className={classes.title}>Hello React</h1>{' '}
+    <h1 className={classes.title}>Hello React</h1>
   </>
 );
