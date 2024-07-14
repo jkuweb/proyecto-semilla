@@ -163,3 +163,4 @@ dist
 # Environment variable
 prod.env
 dev.env
+.vscode/
